@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:text="Number of hours worked"
+            android:text="@string/number_of_hours_worked_label"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:hint="Enter hours"
+            android:autofillHints=""
+            android:hint="@string/enter_hours"
             android:inputType="numberDecimal"
             android:minHeight="48dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -51,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Hourly rate"
+            android:text="@string/hourly_rate_label"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +63,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:hint="Enter hourly rate"
+            android:autofillHints=""
+            android:hint="@string/hourly_rate"
             android:inputType="numberDecimal"
             android:minHeight="48dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Tax rate (%)"
+            android:text="@string/tax_rate_label"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -85,7 +87,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:hint="Enter tax percentage"
+            android:autofillHints=""
+            android:hint="@string/tax_rate"
             android:inputType="numberDecimal"
             android:minHeight="48dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -101,6 +104,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/TaxRate" />
+
+
 
         <TextView
             android:id="@+id/PayOutput"
@@ -146,6 +151,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/TotalPay" />
+
+        <Button
+            android:id="@+id/AboutButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/about_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/TaxOutput" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

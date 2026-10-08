@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.widget.EditText
 import android.widget.TextView
+import android.content.Intent
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n", "DefaultLocale")
@@ -17,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
         val calculateButton = findViewById<Button>(R.id.CalculateButton)
+        val aboutButton = findViewById<Button>(R.id.AboutButton)
         val hoursInput = findViewById<EditText>(R.id.HoursInput)
         val hourlyRate = findViewById<EditText>(R.id.HourlyRate)
         val taxRate = findViewById<EditText>(R.id.TaxRate)
@@ -58,6 +60,14 @@ class MainActivity : AppCompatActivity() {
 
 
         }
+
+        aboutButton.setOnClickListener{
+            val intent = Intent(this, AboutActivity::class.java)
+            startActivity(intent)
+
+        }
+
+
 
 
 

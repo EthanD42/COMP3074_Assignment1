@@ -9,4 +9,12 @@
     <string name="overtime_pay">Overtime Pay:</string>
     <string name="total_pay">Total Pay:</string>
     <string name="tax">Tax:</string>
+    <string name="about">About</string>
+    <string name="name_ethan_cyril_james_dennis">Name: Ethan Cyril James Dennis</string>
+    <string name="student_id_101579407">Student ID: 101579407</string>
+    <string name="number_of_hours_worked_label">Number of hours worked</string>
+    <string name="enter_hours">Enter hours</string>
+    <string name="hourly_rate_label">Hourly rate</string>
+    <string name="tax_rate_label">Tax rate (%)</string>
+    <string name="about_button">About</string>
 </resources>
